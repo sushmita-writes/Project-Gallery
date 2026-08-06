@@ -1,6 +1,6 @@
 # Project: Gallery
 
-Gallery is an e-commerce website where customers can browse and purchase high-quality Print-On-Demand Art prints from diverse artists and various art categories.
+Gallery is an e-commerce website where customers can browse and purchase high-quality Print-On-Demand Art prints from diverse artists and themes/genres.
 
 **Team Members:**
 + Sushmita Shrestha
