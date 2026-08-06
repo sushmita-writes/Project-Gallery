@@ -8,3 +8,5 @@ Gallery is an e-commerce website where customers can browse and purchase high-qu
 + Simran Bohara
 
 **Project Manager:** Sushmita Shrestha
+
+Start Date: Aug 4, 2026
