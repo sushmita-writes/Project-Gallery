@@ -40,3 +40,10 @@ At Gallery, customers are able to:
 
 2. Users (Customers)
 
+### Product 
+
++ **Licensed Artworks:** Artists retain copyrights, and customers are prohibited from redistributing or reselling the licensed artworks
++ **Public Domain Artworks:** Copyright-free artworks from the public domain, available for unrestricted use
+
+
+
