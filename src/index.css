@@ -2,7 +2,7 @@
 
 :root {
   --text: #6b6375;
-  --text-h: #08060d;
+  --text-h: oklch(94.8% 0.028 342.258);
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
@@ -76,11 +76,11 @@ h2 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 50px;
   letter-spacing: -1.68px;
   margin: 32px 0;
   @media (max-width: 1024px) {
-    font-size: 36px;
+    font-size: 30px;
     margin: 20px 0;
   }
 }
