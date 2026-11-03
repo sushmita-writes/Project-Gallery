@@ -2,7 +2,7 @@
 
 :root {
   --text: #6b6375;
-  --text-h: oklch(94.8% 0.028 342.258);
+  --text-h: oklch(89.9% 0.061 343.231);
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
@@ -110,4 +110,27 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+nav {
+  color: oklch(89.9% 0.061 343.231);
+}
+.nav-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.nav-link:hover {
+  color: oklch(97.1% 0.014 343.198);
+}
+
+.nav-link-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
