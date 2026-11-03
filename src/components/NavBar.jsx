@@ -1,26 +1,28 @@
 import { HeartMinus } from "lucide-react";
-import { Search, User, HouseHeart, LibraryBig, Palette, BookHeart, ChartBarDecreasing } from 'lucide-react';
+import { Search, User, ShoppingCart, HouseHeart, LibraryBig, Palette, BookHeart, ChartBarDecreasing } from 'lucide-react';
 
 function NavBar() {
     return (
-        <nav className="flex bg-pink-900 p-4  gap-4 text-pink-100 flex-col justify-between">
+        <nav className="flex bg-pink-900 p-2  gap-6 flex-col justify-between">
             <div className="flex justify-between items-center">
-                <div className="flex gap-4 items-center">
-                    <img src="src/assets/images/sample.png" alt="logo" className="h-12 w-12 rounded-full"></img>
+                <div className="flex gap-2 items-center">
+                    <img src="src/assets/images/sample.png" alt="logo" className="h-10 w-10 rounded-full"></img>
                     <h1 className="text-small">GALLERY</h1>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-5">
                     <Search className="nav-icon "/>
-                    <User className="nav-icon "/>
+                    <ShoppingCart className="nav-icon "/>
+                    <User className="nav-icon "/>   
                 </div>
             </div>
-
-            <div className="flex gap-4 items-center justify-start">
+            
+            <div className="flex gap-2 items-center justify-start">
                 <div className="nav-link">
                     <HouseHeart className="nav-link-icon" />
                     <a href="#">Home</a>
                 </div>
+
                 <div className="nav-link">
                     <BookHeart className="nav-link-icon"/>
                     <a href="#">About Us</a>
