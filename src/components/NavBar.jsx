@@ -10,7 +10,7 @@ function NavBar() {
                     <h1 className="text-small">GALLERY</h1>
                 </div>
 
-                <div className="flex gap-5">
+                <div className="flex gap-2">
                     <Search className="nav-icon "/>
                     <ShoppingCart className="nav-icon "/>
                     <User className="nav-icon "/>   
