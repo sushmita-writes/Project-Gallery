@@ -1,6 +1,6 @@
 import { HeartMinus } from "lucide-react";
 import { Search, User, ShoppingCart, HouseHeart, LibraryBig, Palette, BookHeart, ChartBarDecreasing } from 'lucide-react';
-
+// check
 function NavBar() {
     return (
         <nav className="flex bg-pink-900 p-2  gap-6 flex-col justify-between">
