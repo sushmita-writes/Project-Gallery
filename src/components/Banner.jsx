@@ -28,7 +28,7 @@ function Banner() {
         // Banner + pagination dots --> column
         <section className="flex flex-col items-center m-3 md:m-5 lg:m-5">
             {/* Banner : < + image + excerpt + >  */}
-            <div className="relative w-full h-35 md:h-45 lg:h-55 overflow-hidden bg-pink-100">
+            <div className="relative w-full h-35 md:h-45 lg:h-55 overflow-hidden bg-pink-100 rounded-lg">
                 {/* image and excerpt */}
                 {banners.map((banner, index) => (
                     <div key={index} className={index === current ? 'block' : 'hidden'}>
@@ -38,8 +38,8 @@ function Banner() {
                 ))}
 
                 {/* arrows */}
-                <CircleChevronLeft onClick={prevSlide} className="absolute left-0 top-1/2 transform -translate-y-1/2 text-pink-100 bg-pink-900/60 p-1" />
-                <CircleChevronRight onClick={nextSlide} className="absolute right-0 top-1/2 transform -translate-y-1/2 text-pink-100 bg-pink-900/60 p-1" />
+                <CircleChevronLeft onClick={prevSlide} className="absolute left-1 top-1/2 transform -translate-y-1/2 text-pink-100 bg-pink-900/60 p-1 h-6 w-6 lg:h-8 lg:w-8 rounded-full" />
+                <CircleChevronRight onClick={nextSlide} className="absolute right-1 top-1/2 transform -translate-y-1/2 text-pink-100 bg-pink-900/60 p-1 h-6 w-6 lg:h-8 lg:w-8 rounded-full" />
             </div>
 
             {/* Pagination dots */}
