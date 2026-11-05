@@ -1,33 +1,53 @@
-import { CircleChevronLeft, CircleChevronRight, Heart } from "lucide-react";
-import Pink from "../assets/images/pink.png";
+import useState from 'react';
+import { ChevronLe, CircleChevronLeft } from 'lucide-react';
+import I3 from '../assets/images/i3.png';
+import I4 from '../assets/images/i4.png';
+import I5 from '../assets/images/i5.png';
+import I6 from '../assets/images/i6.png';
+
+const banners = [
+    { image: I3, alt: "slide 1", excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+    { image: I4, alt: "slide 2", excerpt: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+    { image: I5, alt: "slide 3", excerpt: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."},
+    { image: I6, alt: "slide 4", excerpt: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."},
+];
 
 function Banner() {
-    return (
-        <section className="flex flex-col items-center gap-2 m-4">
-            <div>
-                <div className="banner">
-                    <img src={Pink} alt="Banner"></img>
-                    <p className="absolute bottom-0 right-0 text-xs text-pink-100 bg-black/50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                {/* <div className="banner" >
-                    <img></img>
-                    <p></p>
-                </div>
-                <div className="banner">
-                    <img></img>
-                    <p></p>
-                </div> */}
+    const [current, setCurrent] = useState(0);
 
-                <CircleChevronLeft className="absolute left-4 top-2/5 w-6 h-6 p-1 text-pink-100 -translate-y-1/2 bg-black/60" />
-                <CircleChevronRight className="absolute right-4 top-2/5 w-6 h-6 p-1 text-pink-100 -translate-y-1/2 bg-black/60" />
+    const nextSlide = () => {
+        setCurrent(current === banners.length - 1 ? 0 : current + 1);
+    }
+    const prevSlide = () => {
+        setCurrent(current === 0 ? banners.length - 1 : current - 1);
+    }
+
+    return (
+        // Banner + pagination dots --> column
+        <section className="flex flex-col items-center">
+            {/* Banner : < + image + excerpt + >  */}
+            <div className="relative w-full h-50 overflow-hidden">
+                {/* image and excerpt */}
+                {banners.map((banner, index) => (
+                    <div key={index} className={index === current ? 'block' : 'hidden'}>
+                        <img src={banner.image} alt={banner.alt} className="absolute inset-0 w-full h-full object-cover" />
+                        <p className="absolute bottom-0 left-0 right-0 bg-black/60 text-pink-100 p-4">{banner.excerpt}</p>
+                    </div>
+                ))}
+
+                {/* arrows */}
+                <CircleChevronLeft onClick={prevSlide} className="absolute left-0 top-1/2 transform -translate-y-1/2" />
+                <CircleChevronRight onClick={nextSlide} className="absolute right-0 top-1/2 transform -translate-y-1/2" />
             </div>
-            <div className="flex gap-2 text-pink-800">
-                <Heart className="w-3 h-3" fill="currentColor" />
-                <Heart className="w-3 h-3" />
-                <Heart className="w-3 h-3" />
+
+            {/* Pagination dots */}
+            <div>
+                {banners.map((_, index) => (
+                    <Heart fill={index === current ? 'currentColor' : 'none'} className="w-4 h-4" />
+                ))}
             </div>
         </section>
     );
-}
+};
 
 export default Banner;
