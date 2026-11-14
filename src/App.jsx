@@ -1,4 +1,6 @@
 import Banner from './components/Banner';
+import Category from './components/Category1';
+import Footer from './components/Footer1';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
+      <Category/>
+      <Footer/>
     </div>
   );
 }
