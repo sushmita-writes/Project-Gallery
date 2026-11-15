@@ -1,8 +1,6 @@
-import Banner from './components/Banner';
-import Category from './components/Category';
-import Footer from './components/Footer';
-import NavBar from './components/NavBar';
-import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import RootLayout from './layout/RootLayout';
+import Home from './pages/Home';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
 
 function App() {
@@ -10,18 +8,13 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
-
+        <Route index element={<Home />} />
       </Route>
     )
   );
 
   return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <Category/>
-      <Footer/>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
