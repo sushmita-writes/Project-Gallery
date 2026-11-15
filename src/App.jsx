@@ -1,16 +1,28 @@
-import Banner from './components/Banner';
-import Category from './components/Category';
-import Footer from './components/Footer';
-import NavBar from './components/NavBar';
+import RootLayout from './layout/RootLayout';
+import Home from './pages/Home';
+import About from './pages/About';
+import AllProducts from './pages/AllProducts';
+import Artists from './pages/Artists';
+import Trending from './pages/Trending';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+
 
 function App() {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/all-products" element={<AllProducts />} />
+        <Route path="/artists" element={<Artists />} />
+        <Route path="/trending" element={<Trending />} />
+      </Route>
+    )
+  );
+
   return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <Category/>
-      <Footer/>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
