@@ -1,12 +1,12 @@
-import { paintings } from "../components/Categories/Paintings";
-import {sculptures} from "../components/Categories/Sculptures";   
+import { categories } from "../data/categories";  
 import ProductCard from "../components/ProductCard";
 import { Filter}  from "lucide-react";
 
-
-
-
 function AllProducts() {
+  const allProducts = categories
+    .flatMap((category) => category.products)
+    .sort((p1, p2) => p1.name.localeCompare(p2.name));
+
   return (
     <>
       <div className="flex justify-between items-center px-3 mb-2 text-pink-800">
@@ -15,15 +15,7 @@ function AllProducts() {
       </div>
 
       <div className=" px-3 grid grid-cols-4 gap-4 ">
-        {paintings.map((art) => (
-          <ProductCard key={art.id} art={art} />
-        ))}
-      
-        {paintings.map((art) => (
-          <ProductCard key={art.id} art={art} />
-        ))}
-
-        {sculptures.map((art) => (
+        {allProducts.map((art) => (
           <ProductCard key={art.id} art={art} />
         ))}
       </div>
