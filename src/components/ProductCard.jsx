@@ -1,7 +1,7 @@
 
 import { ShoppingCart } from "lucide-react";
 
-function Artworks({ art }) {
+function ProductCard({ art }) {
   return (
     <div>
       <img
@@ -18,11 +18,11 @@ function Artworks({ art }) {
         Rs {art.price}/-
       </h3>
 
-      <button className="mt-2 w-full flex justify-center items-center gap-1 bg-pink-800 border border-pink-500 rounded-md py-2 text-pink-300 hover:bg-violet-200">
+      <button className="mt-2 mb-4 w-full flex justify-center items-center gap-1 bg-pink-800 border border-pink-500 rounded-md py-2 text-pink-300 hover:bg-violet-200">
         <ShoppingCart className="w-6" />
       </button>
     </div>
   );
 }
 
-export default Artworks;
+export default ProductCard;

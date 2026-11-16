@@ -1,12 +1,12 @@
 import { ArrowRight } from "lucide-react";
-import Artworks from "../Artworks";
+import ProductCard from "../ProductCard";
 
 import art1 from "../../assets/images/art1.jpeg";
 import art2 from "../../assets/images/art2.jpeg";
 import art3 from "../../assets/images/atr3.jpeg";
 import art4 from "../../assets/images/art4.jpeg";
 
-const sculptures = [
+export const sculptures = [
   { id: 5, name: "gh", image: art1, price: 1000 },
   { id: 6, name: "kl", image: art2, price: 2000 },
   { id: 7, name: "po", image: art3, price: 2000 },
@@ -27,12 +27,11 @@ function Sculptures() {
 
       <div className="grid grid-cols-4 gap-4">
         {sculptures.map((art) => (
-          <Artworks key={art.id} art={art} />
+          <ProductCard key={art.id} art={art} />
         ))}
       </div>
 
     </div>
   );
 }
-
 export default Sculptures;
