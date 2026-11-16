@@ -1,6 +1,6 @@
 
-import Paintings from "./categories/Paintings";
-import Sculptures from "./categories/Sculptures";
+import Paintings from "./Categories/Paintings";
+import Sculptures from "./Categories/Sculptures";
 
 function Category() {
   return (

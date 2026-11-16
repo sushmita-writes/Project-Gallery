@@ -1,17 +1,19 @@
 import { ArrowRight } from "lucide-react";
-import Artworks from "../Artworks";
+import ProductCard from "../ProductCard";
 
 import art5 from "../../assets/images/art5.jpeg";
 import art6 from "../../assets/images/art6.jpeg";
 import art7 from "../../assets/images/art7.jpeg";
 import art8 from "../../assets/images/art8.jpeg";
 
-const paintings = [
+export const paintings = [
   { id: 1, name: "abc", image: art5, price: 1000 },
   { id: 2, name: "xy", image: art6, price: 1000 },
   { id: 3, name: "yz", image: art7, price: 1000 },
   { id: 4, name: "ab", image: art8, price: 1000 },
 ];
+
+
 
 function Paintings() {
   return (
@@ -27,7 +29,7 @@ function Paintings() {
 
       <div className="grid grid-cols-4 gap-4">
         {paintings.map((art) => (
-          <Artworks key={art.id} art={art} />
+          <ProductCard key={art.id} art={art} />
         ))}
       </div>
 
