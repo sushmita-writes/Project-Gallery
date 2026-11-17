@@ -59,16 +59,19 @@ h2 {
 }
 
 h1 {
-  font-size: 30px;
-  letter-spacing: 2.5px;
+  font-size: 40px;
+  letter-spacing: 0.75px;
+  @media (max-width: 640px) {
+    font-size: 25px;
+  }
 }
 h2 {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
+  @media (max-width: 640px) {
+    font-size: 15px;
   }
 }
 p {
@@ -119,6 +122,6 @@ nav {
 }
 
 .page {
-  @apply m-4;
+  @apply m-4 sm:m-6 md:m-10;
 }
 

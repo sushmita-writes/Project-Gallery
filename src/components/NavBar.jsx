@@ -8,7 +8,7 @@ function NavBar() {
             <div className="flex justify-between items-center">
                 <NavLink to="/" className="flex gap-2 items-center">
                     <img src="src/assets/images/sample.png" alt="logo" className="h-10 w-10 rounded-full"></img>
-                    <h1 className="text-small">GALLERY</h1>
+                    <h1 className="">GALLERY</h1>
                 </NavLink>
 
                 <div className="flex gap-2">

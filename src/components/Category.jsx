@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard"
 
 function Category({ category, list }) {
   return (
-    <div className="mb-10">
+    <div className="my-5">
 
       <div className="mb-2 flex justify-between items-center text-pink-800">
         <h2 className="text-xl font-bold !text-pink-800">{category}</h2>
