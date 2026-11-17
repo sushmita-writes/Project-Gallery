@@ -11,8 +11,8 @@ function AllProducts() {
 
   return (
     <section class="page">
-      <div className="flex justify-between py-4">
-        <h2 className="!text-pink-800">n Art Prints</h2>
+      <div className="flex justify-between pb-4">
+        <h2 className="!text-pink-800">{allProducts.length} Art Prints</h2>
         <button onClick={() => setShowOptions(!showOptions)}
         className="relative bg-pink-800 text-xl text-pink-100 rounded-lg py-2 px-3">
         Filter by Price
