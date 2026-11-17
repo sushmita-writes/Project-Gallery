@@ -12,20 +12,20 @@ export const categories = [
     id: 1,
     name: "Paintings",
     products: [
-      { id: 10, name: "abc", image: art5, price: 1000 },
-      { id: 11, name: "xy", image: art6, price: 1000 },
-      { id: 12, name: "yz", image: art7, price: 1000 },
-      { id: 13, name: "ab", image: art8, price: 1000 },
+      { id: 10, name: "sample name", image: art5, price: 1000, artist: "artist name" },
+      { id: 11, name: "checking a longer name", image: art6, price: 1000, artist: "artist name" },
+      { id: 12, name: "name yz", image: art7, price: 1000, artist: "artist name" },
+      { id: 13, name: "name ab", image: art8, price: 1000, artist: "artist name" },
     ],
   },
   {
     id: 2,
     name: "Sculptures",
     products: [
-      { id: 20, name: "gh", image: art1, price: 1000 },
-      { id: 21, name: "kl", image: art2, price: 2000 },
-      { id: 22, name: "po", image: art3, price: 2000 },
-      { id: 23, name: "pp", image: art4, price: 2000 },
+      { id: 20, name: "sample name gh", image: art1, price: 1000, artist: "artist name" },
+      { id: 21, name: "checking a longer name kl", image: art2, price: 2000, artist: "artist name" },
+      { id: 22, name: "name po", image: art3, price: 2000, artist: "artist name" },
+      { id: 23, name: "name pp", image: art4, price: 2000, artist: "artist name" },
     ],
   },
 ];
