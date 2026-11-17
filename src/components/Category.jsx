@@ -13,7 +13,7 @@ function Category({ category, list }) {
         </h3>
       </div>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="flex gap-3 sm:gap-5 flex-nowrap overflow-x-auto">
         {list.map((art) => (
           <ProductCard key={art.id} art={art} />
         ))}
