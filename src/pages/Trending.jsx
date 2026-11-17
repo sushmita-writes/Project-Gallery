@@ -1,6 +1,6 @@
 function Trending() {
     return(
-        <div>
+        <div class="page">
             <h3 className="text-7xl font-bold">Trending</h3>
         </div>
     )

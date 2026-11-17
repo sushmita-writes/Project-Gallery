@@ -9,7 +9,7 @@ function ProductCard({ art, cardWidthForFlex = "w-1/3 sm:w-1/4 lg:w-1/5" }) {  /
           className="w-full h-30 sm:h-40 md:h-45 lg:h-50 border-[1.75px] sm:border-3 border-pink-800 rounded-lg object-fill"
         />
         <h3 className="text-sm sm:text-xl lg:text-2xl text-left font-bold text-pink-800 line-clamp-2">{art.name}</h3>
-        <h4 className="my-1 text-[10px] sm:text-[18px] lg:text-[20px] text-left font-semibold text-pink-800 truncate leading-none">{art.artist}</h4>
+        <h4 className="text-[10px] sm:text-[18px] lg:text-[20px] text-left font-semibold text-pink-800 truncate">{art.artist}</h4>
         <p className="text-left text-[8px] sm:text-[14px] lg:text-[16px] text-pink-800 leading-none">Rs. {art.price}/-</p>
       </div>
       <button className="mt-2 py-1 w-full bg-pink-900 rounded-sm text-pink-200 flex gap-2 items-center justify-center">
