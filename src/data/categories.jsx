@@ -14,11 +14,11 @@ export const categories = [
     id: 1,
     name: "Paintings",
     products: [
-      { id: 100, name: "aaaakjdfh", image: art9, price: "3,53,500", artist: "Van Gogh"},
-      { id: 101, name: "sample name", image: art5, price: "6,000", artist: "artist name" },
+      { id: 100, name: "aaaakjdfh", image: art9, price: "1,03,500", artist: "Van Gogh"},
+      { id: 101, name: "sample name", image: art5, price: "6,590", artist: "artist name" },
       { id: 102, name: "checking a longer name", image: art6, price: "1,000", artist: "artist name" },
-      { id: 103, name: "asdfy sdz", image: art7, price: "1,000", artist: "artist name" },
-      { id: 104, name: "asdf ab", image: art8, price: "1,000", artist: "artist name" },
+      { id: 103, name: "asdfy sdz", image: art7, price: "2,605", artist: "artist name" },
+      { id: 104, name: "asdf ab", image: art8, price: "11,690", artist: "artist name" },
       { id: 105, name: "askjdfh", image: art10, price: "1,02,510", artist: "no name"}
     ],
   },
@@ -26,10 +26,10 @@ export const categories = [
     id: 2,
     name: "Sculptures",
     products: [
-      { id: 20, name: "sample name gh", image: art1, price: "1,000", artist: "artist name" },
-      { id: 21, name: "z longer name checkkkl", image: art2, price: "2,000", artist: "artist name" },
-      { id: 22, name: "name po", image: art3, price: "2,000", artist: "artist name" },
-      { id: 23, name: "name pp", image: art4, price: "2,000", artist: "artist name" },
+      { id: 20, name: "sample name gh", image: art1, price: "8,000", artist: "artist name" },
+      { id: 21, name: "z longer name checkkkl", image: art2, price: "3,600", artist: "artist name" },
+      { id: 22, name: "name po", image: art3, price: "15,670", artist: "artist name" },
+      { id: 23, name: "name pp", image: art4, price: "7,120", artist: "artist name" },
     ],
   },
 ];
