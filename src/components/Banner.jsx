@@ -26,7 +26,7 @@ function Banner() {
 
     return (
         // Banner + pagination dots --> column
-        <section className="flex flex-col items-center m-3 md:m-5 lg:m-5">
+        <section className="flex flex-col items-center">
             {/* Banner : < + image + excerpt + >  */}
             <div className="relative w-full h-35 md:h-45 lg:h-55 overflow-hidden bg-pink-100 rounded-lg">
                 {/* image and excerpt */}
