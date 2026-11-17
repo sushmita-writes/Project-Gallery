@@ -14,7 +14,7 @@ export const categories = [
     id: 1,
     name: "Paintings",
     products: [
-      { id: 100, name: "askjdfh", image: art9, price: "3,53,500", artist: "Van Gogh"},
+      { id: 100, name: "aaaakjdfh", image: art9, price: "3,53,500", artist: "Van Gogh"},
       { id: 101, name: "sample name", image: art5, price: "6,000", artist: "artist name" },
       { id: 102, name: "checking a longer name", image: art6, price: "1,000", artist: "artist name" },
       { id: 103, name: "asdfy sdz", image: art7, price: "1,000", artist: "artist name" },
@@ -27,7 +27,7 @@ export const categories = [
     name: "Sculptures",
     products: [
       { id: 20, name: "sample name gh", image: art1, price: "1,000", artist: "artist name" },
-      { id: 21, name: "checking a longer name kl", image: art2, price: "2,000", artist: "artist name" },
+      { id: 21, name: "z longer name checkkkl", image: art2, price: "2,000", artist: "artist name" },
       { id: 22, name: "name po", image: art3, price: "2,000", artist: "artist name" },
       { id: 23, name: "name pp", image: art4, price: "2,000", artist: "artist name" },
     ],

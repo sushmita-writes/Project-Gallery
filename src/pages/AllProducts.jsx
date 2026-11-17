@@ -11,7 +11,7 @@ function AllProducts() {
 
   return (
     <section class="page">
-      <div className="flex justify-between pb-4">
+      <div className="flex justify-between pb-4 pt-2 px-3">
         <h2 className="!text-pink-800">{allProducts.length} Art Prints</h2>
         <button onClick={() => setShowOptions(!showOptions)}
         className="relative bg-pink-800 text-xl text-pink-100 rounded-lg py-2 px-3">
@@ -32,9 +32,9 @@ function AllProducts() {
       </button>
       </div>
 
-      <div className=" px-3 grid grid-cols-4 gap-4">
+      <div className="px-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-3 md:gap-y-5">
         {allProducts.map((art) => (
-          <ProductCard key={art.id} art={art} />
+          <ProductCard key={art.id} art={art} cardWidthForFlex="" />
         ))}
       </div>
     </section>
