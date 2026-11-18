@@ -6,6 +6,8 @@ import Artists from './pages/Artists';
 import Trending from './pages/Trending';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import NotFound from './pages/NotFound';
+import ProductDetail from './pages/ProductDetail';
+import { productLoader } from './loaders/productLoader';
 
 function App() {
 
@@ -17,7 +19,8 @@ function App() {
         <Route path="/all-products" element={<AllProducts />} />
         <Route path="/artists" element={<Artists />} />
         <Route path="/trending" element={<Trending />} />
-        <Route path='*' element={<NotFound />} />
+        <Route path="/products/:id" element={<ProductDetail />} loader={productLoader}></Route>
+        <Route path="*" element={<NotFound />} />
       </Route>
     )
   );
