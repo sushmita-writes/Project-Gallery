@@ -15,7 +15,7 @@
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --gallery: 'overlock', ui-serif, Georgia, serif;
-  --heading: 'Fascinate Inline', ui-serif, Georgia, serif;
+  --heading: 'Chango', ui-serif, Georgia, serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--gallery);
@@ -28,14 +28,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #ffffff;
-color: #6b6375;
+  color: #6b6375;
 
   @media (max-width: 1024px) {
     font-size: 16px;
   }
 }
-
-
 
 body {
   margin: 0;
@@ -61,16 +59,19 @@ h2 {
 }
 
 h1 {
-  font-size: 30px;
-  letter-spacing: 2.5px;
+  font-size: 40px;
+  letter-spacing: 0.75px;
+  @media (max-width: 640px) {
+    font-size: 25px;
+  }
 }
 h2 {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
+  @media (max-width: 640px) {
+    font-size: 15px;
   }
 }
 p {
@@ -118,5 +119,9 @@ nav {
 .nav-link-icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.page {
+  @apply m-4 sm:m-6 md:m-10;
 }
 

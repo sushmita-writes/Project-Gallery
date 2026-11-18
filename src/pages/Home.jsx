@@ -1,11 +1,14 @@
 import Banner from "../components/Banner";
 import Category from '../components/Category';
+import { categories } from "../data/categories";
 
 function Home() {
     return (
-        <div>
+        <div class="page">
            <Banner />
-           <Category />
+           {categories.map((category) => (
+                <Category category={category.name} list={category.products} />
+           ))}
         </div>
     )
 }
