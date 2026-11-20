@@ -7,7 +7,7 @@ import art9 from "../assets/images/i1.jpg";
 export const artists = [
   {
     id: 1,
-    name: "Rajesh Shakya",
+    name: "Rajesh Shakyaa",
     bio: "A contemporary artist known for vibrant abstracts and traditional themes. His work bridges modern aesthetics with Nepali cultural heritage.",
     image: art1,
   },
