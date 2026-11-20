@@ -1,13 +1,12 @@
-import { HeartMinus } from "lucide-react";
 import { Search, User, ShoppingCart, HouseHeart, LibraryBig, Palette, BookHeart, ChartBarDecreasing } from 'lucide-react';
 import { NavLink } from "react-router-dom";
-// check
+import logo from "../assets/images/sample.png"
 function NavBar() {
     return (
         <nav className="flex bg-pink-900 p-2  gap-6 flex-col justify-between">
             <div className="flex justify-between items-center">
                 <NavLink to="/" className="flex gap-2 items-center">
-                    <img src="src/assets/images/sample.png" alt="logo" className="h-10 w-10 rounded-full"></img>
+                    <img src={logo} alt="logo" className="h-10 w-10 rounded-full"></img>
                     <h1 className="">GALLERY</h1>
                 </NavLink>
 
